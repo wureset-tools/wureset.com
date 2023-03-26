@@ -1,0 +1,152 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { localizePath } from "astro-i18next";
+import { Trans } from "astro-i18next/components";
+import { changeLanguage, setDefaultNamespace, t } from "i18next";
+
+changeLanguage("it");
+
+setDefaultNamespace("home");
+---
+
+<Layout
+  title="Reset Windows Update Tool | Troubleshooting for Windows Update | Repair System Files, Registry, and Winsock"
+>
+  <main>
+    <div class="-mt-4 bg-gray-extralight">
+      <div class="max-w-screen-xl my-0 mx-auto p-6">
+        <div class="py-8 flex min-h-full items-center">
+          <div class="w-2/6">
+            <img
+              src="/assets/images/logo.png"
+              loading="lazy"
+              alt="Logo Reset Windows Update Tool"
+              height="300"
+              width="300"
+              class="w-80 h-auto"
+            />
+          </div>
+          <div class="w-4/6 xl:flex">
+            <div class="mx-6">
+              <h3 class="text-4xl font-bold text-indigo-main">
+                Reset Windows Update Tool
+              </h3>
+              <p class="my-4 text-xl text-gray-main">
+                {t('main.slogan')}
+              </p>
+            </div>
+            <div class="mx-6">
+              <a
+                href={localizePath('/about')}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-indigo-main hover:bg-indigo-light text-white font-bold m-2 p-4 inline-flex items-center"
+              >
+                <span class="mr-2">{t('main.download')}</span>
+                <svg
+                  style={{ fill: 'white' }}
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  ><path d="M0 0h24v24H0z" fill="none"></path><path
+                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+                  ></path></svg
+                >
+              </a>
+              <a
+                href="https://docs.wureset.online/donate/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-blue-main hover:bg-blue-light text-white font-bold m-2 p-4 inline-flex items-center"
+              >
+                <span class="mr-2">{t('main.donate')}</span>
+                <svg
+                  style={{ fill: 'white' }}
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  ><path d="M0 0h24v24H0z" fill="none"></path><path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  ></path></svg
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white">
+      <div class="max-w-screen-xl my-0 mx-auto p-6">
+        <div class="py-8 flex">
+          <div class="w-4/6 mr-6">
+            <h4 class="mb-4 text-3xl font-bold text-blue-main">
+              {t('secondary.title')}
+            </h4>
+            <Trans i18nKey="secondary.description">
+              <p class="mt-4 text-black">
+                This free and open source tool implements functions through
+                command line.
+              </p>
+              <p class="mt-4 text-black">
+                It's able to delete temporary files, scan, detect and repair
+                corruptions with the Windows System image, scan all protected
+                system files and replace any corrupted files, change invalid
+                values in the Windows Registry, reset Winsock settings and more.
+              </p>
+              <p class="mt-4 text-black">
+                This is a complete troubleshooting tool that can be generated
+                with Windows updates.
+              </p>
+            </Trans>
+          </div>
+          <div class="w-2/6">
+            <h4 class="mb-4 text-3xl font-bold text-blue-main">Releases</h4>
+            <p>
+              <a
+                href="https://github.com/wureset-tools/wureset/releases"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-main hover:underline visited:text-purple"
+                >wureset</a
+              >
+              <small class="text-gray-light text-xs">(2023-03-29)</small>
+            </p>
+            <p>
+              <a
+                href="https://github.com/wureset-tools/script-wureset/archive/refs/tags/v10.5.5.zip"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-main hover:underline visited:text-purple"
+                >script wureset</a
+              >
+              <small class="text-gray-light text-xs">(2023-03-24)</small>
+            </p>
+            <p>
+              <a
+                href="https://github.com/wureset-tools/script-wureset-lite/archive/refs/tags/v1.0.0.zip"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-main hover:underline visited:text-purple"
+                >script wureset lite</a
+              >
+              <small class="text-gray-light text-xs">(2023-03-20)</small>
+            </p>
+            <p>
+              <a
+                href="https://github.com/wureset-tools/reset-wsus-client-id/archive/refs/tags/v1.0.2.zip"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-main hover:underline visited:text-purple"
+                >reset wsus client id</a
+              >
+              <small class="text-gray-light text-xs">(2023-03-20)</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

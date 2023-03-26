@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /.well-known
+
+Allow: /
+Sitemap: https://wureset.com/sitemap.xml

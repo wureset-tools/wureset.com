@@ -1,0 +1,11 @@
+{
+  "main": {
+    "slogan": "Dépannage pour Windows Update.",
+    "download": "Téléchargez",
+    "donate": "Faire un don"
+  },
+  "secondary": {
+    "title": "La Puissance de la Ligne de Commande",
+    "description": "<0>Cet outil gratuit et open source implémente des fonctions via la ligne de commande.</0><1>Il est capable de supprimer les fichiers temporaires, d'analyser, de détecter et de réparer les corruptions avec l'image système Windows, d'analyser tous les fichiers système protégés et de remplacer tous les fichiers endommagés, de modifier les valeurs invalides dans le registre Windows, de réinitialiser les paramètres Winsock et plus encore.</1><2>Il s'agit d'un outil de dépannage complet qui peut être généré avec les mises à jour Windows.</2>"
+  }
+}

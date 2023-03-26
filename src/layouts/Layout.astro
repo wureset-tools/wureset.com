@@ -1,0 +1,29 @@
+---
+import Head from '@/components/Head.astro';
+import { Footer, Navbar } from '@/components/react';
+import Scripts from '@/components/Scripts.astro';
+import { HeadHrefLangs } from 'astro-i18next/components';
+import i18next from 'i18next';
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={i18next.language}>
+  <head>
+    <meta name="generator" content={Astro.generator} />
+    <Head />
+    <HeadHrefLangs />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar client:only="react" />
+    <slot />
+    <Footer client:only="react" />
+    <Scripts />
+  </body>
+</html>

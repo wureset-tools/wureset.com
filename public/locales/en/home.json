@@ -1,0 +1,11 @@
+{
+  "main": {
+    "slogan": "Troubleshooting for Windows Update.",
+    "download": "Download",
+    "donate": "Donate"
+  },
+  "secondary": {
+    "title": "The Power of the Command Line",
+    "description": "<0>This free and open source tool implements functions through command line.</0><1>It's able to delete temporary files, scan, detect and repair corruptions with the Windows System image, scan all protected system files and replace any corrupted files, change invalid values in the Windows Registry, reset Winsock settings and more.</1><2>This is a complete troubleshooting tool that can be generated with Windows updates.</2>"
+  }
+}

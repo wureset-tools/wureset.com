@@ -1,0 +1,11 @@
+{
+  "main": {
+    "slogan": "Risoluzione dei problemi per Windows Update.",
+    "download": "Scaricare",
+    "donate": "Donare"
+  },
+  "secondary": {
+    "title": "Il Potere della Riga di Comando",
+    "description": "<0>Questo strumento gratuito e open source implementa le funzioni attraverso la riga di comando.</0><1>È in grado di eliminare file temporanei, scansionare, rilevare e riparare corruzioni con l'immagine di sistema di Windows, scansionare tutti i file di sistema protetti e sostituire eventuali file danneggiati, modificare valori non validi nel registro di Windows, ripristinare le impostazioni di Winsock e altro.</1><2>Questo è uno strumento completo per la risoluzione dei problemi che può essere generato con gli aggiornamenti di Windows.</2>"
+  }
+}

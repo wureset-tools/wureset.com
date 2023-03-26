@@ -1,0 +1,11 @@
+{
+  "main": {
+    "slogan": "Solução de problemas para o Windows Update.",
+    "download": "Baixar",
+    "donate": "Doar"
+  },
+  "secondary": {
+    "title": "O Poder da Linha de Comando",
+    "description": "<0>Esta ferramenta gratuita e de código aberto implementa funções através da linha de comando.</0><1>Ele é capaz de excluir arquivos temporários, verificar, detectar e reparar corrupções na imagem do sistema Windows, verificar todos os arquivos protegidos do sistema e substituir quaisquer arquivos danificados, alterar valores inválidos no Registro do Windows, redefinir as configurações do Winsock e muito mais.</1><2>Esta é uma ferramenta completa de solução de problemas que pode ser gerada com as atualizações do Windows.</2>"
+  }
+}
