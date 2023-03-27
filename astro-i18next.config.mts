@@ -2,7 +2,7 @@
 export default {
   defaultLocale: 'en',
   locales: ['en', 'it', 'fr', 'es', 'de', 'br'],
-  namespaces: ['common', 'home'],
+  namespaces: ['common', 'home', 'downloads', 'about', 'support'],
   defaultNamespace: 'common',
   load: ['server', 'client'],
   i18nextServerPlugins: {

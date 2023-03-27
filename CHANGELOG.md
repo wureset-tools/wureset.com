@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- New 'Downloads' page
+- Add postcss configs
+- Add namespaces in i18n config file
+
+### Changed
+
+- Rename all 'downloads.json' files
+
+### Fixed
+
+- Fix home path link in the navbar
+
 ## [0.1.0] - 2023-03-25
 
 - initial commit

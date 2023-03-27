@@ -1,6 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { changeLanguage, setDefaultNamespace } from "i18next";
+import { changeLanguage, setDefaultNamespace, t } from "i18next";
 
 changeLanguage("es");
 
@@ -8,5 +8,140 @@ setDefaultNamespace("downloads");
 ---
 
 <Layout title="Downloads | Windows Update Reset Tool">
-  <main></main>
+  <main class="max-w-screen-xl my-0 mx-auto p-6">
+    <div class="mt-6">
+      <h3 class="text-4xl font-bold text-indigo-main">{t('main.title')}</h3>
+      <p class="my-4 text-gray-main">{t('main.description')}</p>
+    </div>
+    <div class="mt-6">
+      <h5 class="mb-4 text-3xl font-bold text-blue-main">
+        {t('secondary.recomended')}
+      </h5>
+    </div>
+    <div class="mt-6 flex p-6 bg-gray-extralight min-h-full items-center">
+      <div class="w-2/5">
+        <strong class="font-bold text-black"
+          >Reset Windows Update Tool - Portable</strong
+        >
+        <p class="mt-2 text-xs text-gray-dark">
+          {t('secondary.description.wureset')}
+        </p>
+      </div>
+      <div class="w-1/5 text-center">
+        <p class="text-sm text-gray-dark">v11.0.0.9</p>
+      </div>
+      <div class="w-2/5 text-right">
+        <a
+          href="https://github.com/ManuelGil/Reset-Windows-Update-Tool/archive/refs/tags/11.0.0.9.zip"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-indigo-main hover:bg-indigo-light text-white font-bold py-2 px-4"
+          >{t('secondary.download')}</a
+        >
+        <p class="mt-2 text-xs">
+          <a
+            href="https://github.com/wureset-tools/wureset/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-main hover:underline visited:text-purple"
+            >See more {'>>'}</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="mt-6">
+      <h5 class="text-3xl font-bold text-blue-main">{t('secondary.others')}</h5>
+    </div>
+    <div class="mt-6 flex p-6 min-h-full items-center">
+      <div class="w-2/5">
+        <strong class="font-bold text-black"
+          >Reset Windows Update Tool - Script</strong
+        >
+        <p class="mt-2 text-xs text-gray-main">
+          {t('secondary.description.script-wureset')}
+        </p>
+      </div>
+      <div class="w-1/5 text-center">
+        <p class="text-sm text-gray-main">v10.5.5</p>
+      </div>
+      <div class="w-2/5 text-right">
+        <a
+          href="https://github.com/wureset-tools/script-wureset/archive/refs/tags/v10.5.5.zip"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-indigo-main hover:bg-indigo-light text-white font-bold py-2 px-4"
+          >{t('secondary.download')}</a
+        >
+        <p class="mt-2 text-xs">
+          <a
+            href="https://github.com/wureset-tools/script-wureset/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-main hover:underline visited:text-purple"
+            >See more {'>>'}</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="mt-6 flex p-6 min-h-full items-center">
+      <div class="w-2/5">
+        <strong class="font-bold text-black"
+          >Reset Windows Update Tool - Lite</strong
+        >
+        <p class="mt-2 text-xs text-gray-main">
+          {t('secondary.description.script-wureset-lite')}
+        </p>
+      </div>
+      <div class="w-1/5 text-center">
+        <p class="text-sm text-gray-main">v1.0.0</p>
+      </div>
+      <div class="w-2/5 text-right">
+        <a
+          href="https://github.com/wureset-tools/script-wureset-lite/archive/refs/tags/v1.0.0.zip"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-indigo-main hover:bg-indigo-light text-white font-bold py-2 px-4"
+          >{t('secondary.download')}</a
+        >
+        <p class="mt-2 text-xs">
+          <a
+            href="https://github.com/wureset-tools/script-wureset-lite/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-main hover:underline visited:text-purple"
+            >See more {'>>'}</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="mt-6 flex p-6 min-h-full items-center">
+      <div class="w-2/5">
+        <strong class="font-bold text-black">Reset WSUS Client ID</strong>
+        <p class="mt-2 text-xs text-gray-main">
+          {t('secondary.description.reset-wsus-client-id')}
+        </p>
+      </div>
+      <div class="w-1/5 text-center">
+        <p class="text-sm text-gray-main">v1.0.2</p>
+      </div>
+      <div class="w-2/5 text-right">
+        <a
+          href="https://github.com/wureset-tools/reset-wsus-client-id/archive/refs/tags/v1.0.2.zip"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-indigo-main hover:bg-indigo-light text-white font-bold py-2 px-4"
+          >{t('secondary.download')}</a
+        >
+        <p class="mt-2 text-xs">
+          <a
+            href="https://github.com/wureset-tools/reset-wsus-client-id/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-main hover:underline visited:text-purple"
+            >See more {'>>'}</a
+          >
+        </p>
+      </div>
+    </div>
+  </main>
 </Layout>

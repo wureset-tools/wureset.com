@@ -23,7 +23,7 @@ const lang = i18next.resolvedLanguage;
 const path = ['br', 'de', 'es', 'fr', 'it'].includes(lang) ? `/${lang}/` : '/';
 
 const links = [
-  { id: 1, route: t('navbar.home'), url: '/' },
+  { id: 1, route: t('navbar.home'), url: path },
   { id: 2, route: t('navbar.downloads'), url: `${path}downloads` },
   { id: 3, route: t('navbar.about'), url: `${path}about` },
   { id: 4, route: t('navbar.support'), url: `${path}support` },

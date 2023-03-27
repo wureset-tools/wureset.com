@@ -1,0 +1,17 @@
+{
+  "main": {
+    "title": "Baixar",
+    "description": "Baixe o \"Reset Windows Update Tool\"."
+  },
+  "secondary": {
+    "recomended": "Download Recomendado:",
+    "others": "Outros Downloads:",
+    "download": "Baixar",
+    "description": {
+      "wureset": "Ferramenta de solução de problemas com atualizações do Windows",
+      "script-wureset": "Este é um script para solução de problemas do Windows",
+      "script-wureset-lite": "Este script apenas restaura os componentes do Windows Update (versão lite)",
+      "reset-wsus-client-id": "Este script corrige ClientIDs WSUS duplicados"
+    }
+  }
+}
