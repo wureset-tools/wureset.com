@@ -1,7 +1,7 @@
 {
   "main": {
     "title": "Downloads",
-    "description": "Herunterladen das \"Reset Windows Update Tool\"."
+    "description": "Reset Windows Update Tool steht nur als 64-Bit-Paket zum Download bereit, sowie als Quellcode-Datei, wenn Sie es selbst kompilieren möchten."
   },
   "secondary": {
     "recomended": "Empfohlener Download:",

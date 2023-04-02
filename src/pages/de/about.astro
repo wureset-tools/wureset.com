@@ -1,6 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { changeLanguage, setDefaultNamespace } from "i18next";
+import { changeLanguage, setDefaultNamespace, t } from "i18next";
 
 changeLanguage("de");
 
@@ -8,5 +8,77 @@ setDefaultNamespace("about");
 ---
 
 <Layout title="About | Windows Update Reset Tool">
-  <main></main>
+  <main class="max-w-screen-xl my-0 mx-auto p-6">
+    <div class="mt-6">
+      <p class="mt-4 text-black">
+        {t('description')}
+      </p>
+    </div>
+    <div class="mt-6">
+      <h4 class="mb-4 text-3xl font-bold text-blue-main">
+        {t('glosary.title')}
+      </h4>
+      <dl>
+        <dt class="mt-4 font-bold text-black">DISM</dt>
+        <dd class="mt-2 ml-8 text-gray-main">
+          {t('glosary.dism')}
+        </dd>
+        <dt class="mt-4 font-bold text-black">Fix It</dt>
+        <dd class="mt-2 ml-8 text-gray-main">
+          {t('glosary.fix-it')}
+        </dd>
+        <dt class="mt-4 font-bold text-black">Registry</dt>
+        <dd class="mt-2 ml-8 text-gray-main">
+          {t('glosary.registry')}
+        </dd>
+        <dt class="mt-4 font-bold text-black">Restore point</dt>
+        <dd class="mt-2 ml-8 text-gray-main">
+          {t('glosary.restore-point')}
+        </dd>
+        <dt class="mt-4 font-bold text-black">SFC</dt>
+        <dd class="mt-2 ml-8 text-gray-main">
+          {t('glosary.sfc')}
+        </dd>
+        <dt class="mt-4 font-bold text-black">Winsock</dt>
+        <dd class="mt-2 ml-8 text-gray-main">
+          {t('glosary.winsock')}
+        </dd>
+      </dl>
+    </div>
+    <div class="mt-6">
+      <h4 class="mb-4 text-3xl font-bold text-blue-main">
+        {t('references.title')}
+      </h4>
+      <p class="mt-4 text-black">
+        <span>{t('references.reset-components')}:</span>
+        <a
+          href="https://support.microsoft.com/kb/971058"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-main hover:underline visited:text-purple"
+          >https://support.microsoft.com/kb/971058</a
+        >.
+      </p>
+      <p class="mt-4 text-black">
+        <span>{t('references.sfc')}:</span>
+        <a
+          href="https://support.microsoft.com/kb/929833"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-main hover:underline visited:text-purple"
+          >https://support.microsoft.com/kb/929833</a
+        >.
+      </p>
+      <p class="mt-4 text-black">
+        <span>{t('references.dism')}:</span>
+        <a
+          href="https://support.microsoft.com/kb/947821"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-main hover:underline visited:text-purple"
+          >https://support.microsoft.com/kb/947821</a
+        >.
+      </p>
+    </div>
+  </main>
 </Layout>

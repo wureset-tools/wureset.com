@@ -1,1 +1,18 @@
-{}
+{
+  "description": "The Reset Windows Update Tool is a powerful system repair tool designed to provide support for a range of repair options. With this tool, users can easily reset Windows Update Components, delete temporary files, scan, detect and repair any corruptions within the Windows System image, scan all protected system files, replace any corrupted files, change invalid values in the Windows Registry, reset Winsock settings and more. This versatile tool can help users resolve a variety of system issues, making it an essential component of any comprehensive system repair toolkit.",
+  "glosary": {
+    "title": "Glossary",
+    "dism": "Deployment Image Servicing and Management is a command-line tool used to mount and repair Windows images prior to deployment.",
+    "fix-it": "It is a diagnostic program that allows you to detect problems that may compromise the proper functioning of Windows.",
+    "registry": "It is a central hierarchical database introduced in Microsoft Windows 95 and Windows NT to store information needed to configure the system for one or more users, applications, and hardware devices.",
+    "restore-point": "It is a representation of a stored state of the computer's system files.",
+    "sfc": "System File Checker is a Windows utility that allows users to check Windows system files for corruption and restore damaged files.",
+    "winsock": "It is a dynamic library of DLL functions for Windows, created with the purpose of implementing TCP/IP. Includes support for sending and receiving data packets over BSD sockets."
+  },
+  "references": {
+    "title": "Reference",
+    "reset-components": "How do I reset Windows Update components?",
+    "sfc": "Use the System File Checker tool to repair missing or corrupted system files",
+    "dism": "Fix Windows Update errors by using the DISM or System Update Readiness tool"
+  }
+}

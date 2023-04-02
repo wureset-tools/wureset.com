@@ -1,1 +1,18 @@
-{}
+{
+  "description": "La herramienta Reset Windows Update Tool es una potente herramienta de reparación del sistema diseñada para proporcionar soporte a una serie de opciones de reparación. Con esta herramienta, los usuarios pueden restablecer fácilmente los componentes de Windows Update, eliminar archivos temporales, escanear, detectar y reparar cualquier corrupción dentro de la imagen del sistema de Windows, escanear todos los archivos protegidos del sistema, reemplazar cualquier archivo dañado, cambiar valores no válidos en el Registro de Windows, restablecer la configuración de Winsock y mucho más. Esta versátil herramienta puede ayudar a los usuarios a resolver una gran variedad de problemas del sistema, lo que la convierte en un componente esencial de cualquier kit completo de herramientas de reparación del sistema.",
+  "glosary": {
+    "title": "Glosario",
+    "dism": "Deployment Image Servicing and Management es una herramienta de línea de comandos utilizada para montar y reparar imágenes de Windows antes de su despliegue.",
+    "fix-it": "Es un programa de diagnóstico que permite detectar problemas que pueden comprometer el correcto funcionamiento de Windows",
+    "registry": "Es una base de datos jerárquica central introducida en Microsoft Windows 95 y Windows NT para almacenar la información necesaria para configurar el sistema para uno o más usuarios, aplicaciones y dispositivos de hardware.",
+    "restore-point": "Es una representación de un estado almacenado de los archivos de sistema del ordenador",
+    "sfc": "Comprobador de archivos de sistema es una utilidad de Windows que permite a los usuarios comprobar si los archivos de sistema de Windows están dañados y restaurarlos.",
+    "winsock": "Es una librería dinámica de funciones DLL para Windows, creada con el propósito de implementar TCP/IP. Incluye soporte para enviar y recibir paquetes de datos a través de sockets BSD."
+  },
+  "references": {
+    "title": "Referencia",
+    "reset-components": "¿Cómo puedo restablecer los componentes de Windows Update?",
+    "sfc": "Utiliza la herramienta System File Checker para reparar archivos del sistema que falten o estén dañados",
+    "dism": "Solucionar errores de Windows Update mediante la herramienta DISM o System Update Readiness"
+  }
+}

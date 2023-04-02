@@ -1,1 +1,18 @@
-{}
+{
+  "description": "Lo strumento Reset Windows Update Tool è un potente strumento di riparazione del sistema progettato per fornire supporto a una serie di opzioni di riparazione. Con questo strumento, gli utenti possono facilmente ripristinare i componenti di Windows Update, eliminare i file temporanei, scansionare, rilevare e riparare qualsiasi corruzione all'interno dell'immagine di sistema di Windows, scansionare tutti i file di sistema protetti, sostituire qualsiasi file danneggiato, modificare i valori non validi nel registro di Windows, ripristinare le impostazioni di Winsock e altro ancora. Questo strumento versatile può aiutare gli utenti a risolvere una varietà di problemi di sistema, rendendolo un componente essenziale di qualsiasi kit completo di strumenti per la riparazione del sistema.",
+  "glosary": {
+    "title": "Glossario",
+    "dism": "Deployment Image Servicing and Management è uno strumento a riga di comando utilizzato per montare e riparare le immagini di Windows prima della distribuzione.",
+    "fix-it": "È un programma di diagnostica che consente di rilevare i problemi che possono compromettere il corretto funzionamento di Windows.",
+    "registry": "È un database gerarchico centrale introdotto in Microsoft Windows 95 e Windows NT per memorizzare le informazioni necessarie a configurare il sistema per uno o più utenti, applicazioni e dispositivi hardware.",
+    "restore-point": "È una rappresentazione di uno stato memorizzato dei file di sistema del computer.",
+    "sfc": "System File Checker è un'utilità di Windows che consente agli utenti di controllare i file di sistema di Windows per verificare che non siano danneggiati e di ripristinare i file danneggiati.",
+    "winsock": "È una libreria dinamica di funzioni DLL per Windows, creata allo scopo di implementare il TCP/IP. Include il supporto per l'invio e la ricezione di pacchetti di dati su socket BSD."
+  },
+  "references": {
+    "title": "Riferimento",
+    "reset-components": "Come si ripristinano i componenti di Windows Update?",
+    "sfc": "Utilizzare lo strumento System File Checker per riparare i file di sistema mancanti o danneggiati",
+    "dism": "Risolvere gli errori di Windows Update utilizzando lo strumento DISM o System Update Readiness"
+  }
+}
