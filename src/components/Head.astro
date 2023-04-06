@@ -18,41 +18,18 @@ import Seo from './Seo.astro';
 
 <Seo />
 
-<!-- Prefetch page -->
-<link rel="prefetch" href="downloads" crossorigin="anonymous" />
-
+<!-- CDN preconnet -->
 <link
-  rel="preconnect"
+  rel="preconnect dns-prefetch"
   href="https://cdnjs.cloudflare.com"
-  crossorigin="anonymous"
-/>
-<link
-  rel="dns-prefetch"
-  href="https://cdnjs.cloudflare.com"
-  crossorigin="anonymous"
-/>
-
-<!-- Fathom - beautiful, simple website analytics -->
-<!-- <script
-  src="https://certain-quality.astro.build/script.js"
-  data-site="ABCDEFGH"
-  defer
-></script> -->
-
-<!-- Font preloads -->
-
-<!-- Images preloads -->
-<link
-  rel="preload"
-  as="image"
-  href="/assets/images/logo.png"
   crossorigin="anonymous"
 />
 
 <!-- CSS preloads -->
 <link
-  rel="preload"
+  rel="stylesheet preload"
   as="style"
+  type="text/css"
   href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css"
   crossorigin="anonymous"
 />
@@ -61,6 +38,7 @@ import Seo from './Seo.astro';
 <link
   rel="preload"
   as="script"
+  type="text/javascript"
   href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"
   crossorigin="anonymous"
-/><link rel="preload" as="script" href="/assets/js/custom.min.js" />
+/>

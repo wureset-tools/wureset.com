@@ -2,7 +2,8 @@ const purgecss = require('@fullhuman/postcss-purgecss');
 module.exports = {
   plugins: [
     purgecss({
-      content: ['./**/*.html', './**/*.astro'],
+      content: ['./**/*.{astro,ts,tsx,html}'],
+      defaultExtractor: (content) => content.match(/[\w-/:%@]+(?<!:)/g) || [],
     }),
   ],
 };
