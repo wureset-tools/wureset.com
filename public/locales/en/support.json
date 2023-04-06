@@ -1,1 +1,14 @@
-{}
+{
+  "main": {
+    "title": "How can I help?",
+    "options": "There are several ways you can contribute to improving our project. You don't have to be a developer to help! Some ways you can help include:",
+    "report-error": "<0>Reporting errors</0>: If you come across any mistakes in the documentation, please let us know. This helps us keep the documentation accurate and up-to-date.",
+    "request-feature": "<0>Requesting features</0>: If you have an idea for a feature that would be useful, please propose it. We welcome feedback from our community and will take your suggestions into consideration.",
+    "correct-typos": "<0>Correcting typos</0>: If you notice any small errors, such as spelling or grammar mistakes, feel free to fix them. These may seem like minor issues, but they can make a big difference in the readability and professionalism of our documentation.",
+    "before": "Before submitting a bug report or feature request, please take a moment to search the <0>GitHub Issue Tracker</0> to make sure your issue or request hasn't already been reported. This helps us avoid duplicates and ensures that we can prioritize our work effectively.",
+    "suggest": "While we can't guarantee that every request will be implemented, we appreciate all feedback and take it seriously. Your suggestions and contributions help us make our project better for everyone. Thank you for your help!"
+  },
+  "secondary": {
+    "title": "Other resources"
+  }
+}

@@ -7,14 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2023-04-06
+
 ### Added
 
-- New 'Downloads' page
+- Add CI config file
+- Add 'Support' page
+- Add 'About' page
+- Add 'Downloads' page
 - Add postcss configs
 - Add namespaces in i18n config file
 
 ### Changed
 
+- Update Portable version
 - Rename all 'downloads.json' files
 
 ### Fixed
@@ -25,5 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - initial commit
 
-[unreleased]: https://github.com/wureset-tools/wureset.com/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/wureset-tools/wureset.com/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/wureset-tools/wureset.com/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/wureset-tools/wureset.com/releases/tag/v0.1.0

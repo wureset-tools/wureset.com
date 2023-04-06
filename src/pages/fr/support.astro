@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { changeLanguage, setDefaultNamespace } from "i18next";
+import { Trans } from "astro-i18next/components";
+import { changeLanguage, setDefaultNamespace, t } from "i18next";
 
 changeLanguage("fr");
 
@@ -8,5 +9,95 @@ setDefaultNamespace("support");
 ---
 
 <Layout title="Support | Windows Update Reset Tool">
-  <main></main>
+  <main class="max-w-screen-xl my-0 mx-auto p-6">
+    <div class="mt-6">
+      <h3 class="text-4xl font-bold text-indigo-main">{t('main.title')}</h3>
+      <p class="mt-4 text-black">
+        {t('main.options')}
+      </p>
+      <p class="mt-4">
+        <ul class="list-disc">
+          <li class="mt-4 ml-8 text-gray-dark">
+            <Trans i18nKey="main.report-error">
+              <strong class="text-black">Reporting errors</strong>: If you come
+              across any mistakes in the documentation, please let us know. This
+              helps us keep the documentation accurate and up-to-date.
+            </Trans>
+          </li>
+          <li class="mt-4 ml-8 text-gray-dark">
+            <Trans i18nKey="main.request-feature">
+              <strong class="text-black">Requesting features</strong>: If you
+              have an idea for a feature that would be useful, please propose
+              it. We welcome feedback from our community and will take your
+              suggestions into consideration.
+            </Trans>
+          </li>
+          <li class="mt-4 ml-8 text-gray-dark">
+            <Trans i18nKey="main.correct-typos">
+              <strong class="text-black">Correcting typos</strong>: If you
+              notice any small errors, such as spelling or grammar mistakes,
+              feel free to fix them. These may seem like minor issues, but they
+              can make a big difference in the readability and professionalism
+              of our documentation.
+            </Trans>
+          </li>
+        </ul>
+      </p>
+      <p class="mt-4 text-black">
+        <Trans i18nKey="main.before">
+          Before submitting a bug report or feature request, please take a
+          moment to search the
+          <a
+            href="https://github.com/wureset-tools/wureset/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-main hover:underline visited:text-purple"
+            >GitHub Issue Tracker</a
+          >
+          to make sure your issue or request hasn't already been reported. This helps
+          us avoid duplicates and ensures that we can prioritize our work effectively.
+        </Trans>
+      </p>
+      <p class="mt-4 text-black">
+        {t('main.suggest')}
+      </p>
+    </div>
+    <div class="mt-6">
+      <h4 class="text-3xl font-bold text-blue-main">{t('secondary.title')}</h4>
+      <p class="mt-4 text-black">
+        <ul class="list-disc">
+          <li class="mt-4 ml-8 text-gray-dark">
+            <strong class="text-black">GitHub</strong>:
+            <a
+              href="https://github.com/wureset-tools"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-main hover:underline visited:text-purple"
+              >https://github.com/wureset-tools</a
+            >.
+          </li>
+          <li class="mt-4 ml-8 text-gray-dark">
+            <strong class="text-black">Docs</strong>:
+            <a
+              href="https://docs.wureset.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-main hover:underline visited:text-purple"
+              >https://docs.wureset.com</a
+            >.
+          </li>
+          <li class="mt-4 ml-8 text-gray-dark">
+            <strong class="text-black">Status</strong>:
+            <a
+              href="https://wureset.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-main hover:underline visited:text-purple"
+              >https://wureset.online</a
+            >.
+          </li>
+        </ul>
+      </p>
+    </div>
+  </main>
 </Layout>

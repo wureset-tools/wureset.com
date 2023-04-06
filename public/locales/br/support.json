@@ -1,1 +1,14 @@
-{}
+{
+  "main": {
+    "title": "Como posso ajudar?",
+    "options": "Há várias formas de contribuir para melhorar o nosso projecto. Não precisa de ser um promotor para ajudar! Algumas formas de poder ajudar incluem:",
+    "report-error": "<0>Reportando erros</0>: Se se deparar com algum erro na documentação, por favor informe-nos. Isto ajuda-nos a manter a documentação precisa e actualizada.",
+    "request-feature": "<0>Pedir características</0>: Se tiver uma ideia para uma funcionalidade que possa ser útil, por favor proponha-a. Agradecemos o feedback da nossa comunidade e tomaremos em consideração as suas sugestões.",
+    "correct-typos": "<0>Correcção de erros tipográficos</0>: Se notar quaisquer pequenos erros, tais como erros ortográficos ou gramaticais, sinta-se à vontade para corrigi-los. Estes podem parecer questões menores, mas podem fazer uma grande diferença na legibilidade e no profissionalismo da nossa documentação.",
+    "before": "Antes de submeter um relatório de erro ou pedido de recurso, por favor, reserve um momento para pesquisar o <0>GitHub Issue Tracker</0> para se certificar de que o seu problema ou pedido ainda não foi relatado. Isto ajuda-nos a evitar duplicações e assegura que podemos dar prioridade ao nosso trabalho de forma eficaz.",
+    "suggest": "Embora não possamos garantir que cada pedido será implementado, agradecemos todo o feedback e levamo-lo a sério. As suas sugestões e contribuições ajudam-nos a tornar o nosso projecto melhor para todos. Obrigado pela vossa ajuda!"
+  },
+  "secondary": {
+    "title": "Outros recursos"
+  }
+}

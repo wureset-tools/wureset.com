@@ -9,8 +9,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  //   site: 'https://wureset.com',
-  //   base: '/',
+  site: 'https://wureset.com',
+  base: '/',
   integrations: [
     astroI18next(),
     sitemap(),
