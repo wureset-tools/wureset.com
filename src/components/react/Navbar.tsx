@@ -19,7 +19,7 @@ import { languages, localizePath, paths, resolveLanguage } from './Utils';
 
 setDefaultNamespace('common');
 
-const lang = resolveLanguage(i18next.resolvedLanguage);
+const lang = resolveLanguage(i18next.language);
 
 interface Props {
   pathname: string;
