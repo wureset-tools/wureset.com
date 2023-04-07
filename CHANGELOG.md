@@ -20,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix undefined language
 
+### Removed
+
+- Remove common.json resources
+
 ## [1.0.0] - 2023-04-06
 
 ### Added

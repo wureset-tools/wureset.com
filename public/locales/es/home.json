@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "downloads": "Descargas",
+    "about": "Acerca De",
+    "support": "Soporte"
+  },
   "main": {
     "slogan": "Solución de problemas para Windows Update.",
     "download": "Descargar",

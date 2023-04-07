@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Home",
+    "downloads": "Downloads",
+    "about": "About",
+    "support": "Support"
+  },
   "main": {
     "slogan": "Troubleshooting for Windows Update.",
     "download": "Download",

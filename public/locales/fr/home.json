@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Index",
+    "downloads": "Téléchargements",
+    "about": "À Propos De",
+    "support": "Aide"
+  },
   "main": {
     "slogan": "Dépannage pour Windows Update.",
     "download": "Téléchargez",

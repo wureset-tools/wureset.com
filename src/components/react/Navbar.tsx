@@ -11,13 +11,11 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import i18next, { setDefaultNamespace, t } from 'i18next';
+import i18next, { t } from 'i18next';
 import React from 'react';
 
 import { theme } from './Theme';
 import { languages, localizePath, paths, resolveLanguage } from './Utils';
-
-setDefaultNamespace('common');
 
 const lang = resolveLanguage(i18next.language);
 
@@ -40,7 +38,7 @@ const Navbar = (props: Props): React.ReactElement => {
                 component="a"
                 href={localizePath(path.route, lang)}
                 key={path.name}
-                className="h-16 rounded-none"
+                className="h-16 rounded-none hover:bg-indigo-light"
               >
                 {t('navbar.' + path.name)}
               </Button>
@@ -56,7 +54,7 @@ const Navbar = (props: Props): React.ReactElement => {
             sx: {
               bgcolor: 'secondary.main',
             },
-            className: 'bg-blue-main',
+            className: 'bg-blue-main hover:bg-blue-light',
           }}
         >
           {languages.map((language) => (
@@ -64,7 +62,7 @@ const Navbar = (props: Props): React.ReactElement => {
               sx={{
                 bgcolor: 'secondary.main',
               }}
-              className="bg-blue-main"
+              className="bg-blue-main hover:bg-blue-light"
               key={language.locale}
               icon={
                 <Link

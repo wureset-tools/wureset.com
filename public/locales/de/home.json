@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Startseite",
+    "downloads": "Downloads",
+    "about": "Infos für",
+    "support": "Hilfe"
+  },
   "main": {
     "slogan": "Fehlerbehebung für Windows Update.",
     "download": "Herunterladen",

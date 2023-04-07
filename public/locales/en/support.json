@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Home",
+    "downloads": "Downloads",
+    "about": "About",
+    "support": "Support"
+  },
   "main": {
     "title": "How can I help?",
     "options": "There are several ways you can contribute to improving our project. You don't have to be a developer to help! Some ways you can help include:",

@@ -4,13 +4,8 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import i18next from 'i18next';
-
 import Favicon from './Favicon.astro';
 import Seo from './Seo.astro';
-import { resolveLanguage } from './react';
-
-const lang = resolveLanguage(i18next.language);
 ---
 
 <!-- Global Metadata -->
@@ -22,13 +17,6 @@ const lang = resolveLanguage(i18next.language);
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <Seo />
-
-<link
-  rel="prefetch"
-  as="fetch"
-  type="application/json"
-  href={'/locales/' + lang + '/common.json'}
-/>
 
 <!-- CDN preconnet -->
 <link

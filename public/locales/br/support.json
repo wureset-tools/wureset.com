@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Índice",
+    "downloads": "Baixar",
+    "about": "Sobre",
+    "support": "Ajuda"
+  },
   "main": {
     "title": "Como posso ajudar?",
     "options": "Há várias formas de contribuir para melhorar o nosso projecto. Não precisa de ser um promotor para ajudar! Algumas formas de poder ajudar incluem:",

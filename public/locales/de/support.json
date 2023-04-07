@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Startseite",
+    "downloads": "Downloads",
+    "about": "Infos für",
+    "support": "Hilfe"
+  },
   "main": {
     "title": "Wie kann ich helfen?",
     "options": "Es gibt verschiedene Möglichkeiten, wie Sie zur Verbesserung unseres Projekts beitragen können. Sie müssen kein Entwickler sein, um zu helfen! Einige Möglichkeiten, wie Sie helfen können, sind:",

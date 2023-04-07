@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "downloads": "Descargas",
+    "about": "Acerca De",
+    "support": "Soporte"
+  },
   "main": {
     "title": "¿Cómo puedo ayudar?",
     "options": "Hay varias formas de contribuir a mejorar nuestro proyecto. No hace falta ser desarrollador para ayudar. Algunas formas de ayudar son:",

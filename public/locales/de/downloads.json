@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Startseite",
+    "downloads": "Downloads",
+    "about": "Infos für",
+    "support": "Hilfe"
+  },
   "main": {
     "title": "Downloads",
     "description": "Reset Windows Update Tool steht nur als 64-Bit-Paket zum Download bereit, sowie als Quellcode-Datei, wenn Sie es selbst kompilieren möchten."

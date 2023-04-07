@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Índice",
+    "downloads": "Baixar",
+    "about": "Sobre",
+    "support": "Ajuda"
+  },
   "description": "A ferramenta Reset Windows Update Tool é uma poderosa ferramenta de reparo do sistema projetada para fornecer suporte para uma variedade de opções de reparo. Com esta ferramenta, os usuários podem redefinir facilmente os componentes do Windows Update, excluir arquivos temporários, verificar, detectar e reparar quaisquer corrupções na imagem do sistema Windows, verificar todos os arquivos protegidos do sistema, substituir quaisquer arquivos corrompidos, alterar valores inválidos no Registro do Windows, redefinir o Winsock configurações e muito mais. Esta ferramenta versátil pode ajudar os usuários a resolver uma variedade de problemas do sistema, tornando-se um componente essencial de qualquer kit de ferramentas abrangente de reparo do sistema.",
   "glosary": {
     "title": "Glossário",

@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Home",
+    "downloads": "Downloads",
+    "about": "About",
+    "support": "Support"
+  },
   "description": "The Reset Windows Update Tool is a powerful system repair tool designed to provide support for a range of repair options. With this tool, users can easily reset Windows Update Components, delete temporary files, scan, detect and repair any corruptions within the Windows System image, scan all protected system files, replace any corrupted files, change invalid values in the Windows Registry, reset Winsock settings and more. This versatile tool can help users resolve a variety of system issues, making it an essential component of any comprehensive system repair toolkit.",
   "glosary": {
     "title": "Glossary",
