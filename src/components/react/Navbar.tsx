@@ -42,7 +42,7 @@ const Navbar = (props: Props): React.ReactElement => {
                 key={path.name}
                 className="h-16 rounded-none"
               >
-                {t('navbar.' + path.name)}
+                {t('navbar.' + path.name) ?? path.name}
               </Button>
             ))}
           </Toolbar>
@@ -65,13 +65,13 @@ const Navbar = (props: Props): React.ReactElement => {
                 bgcolor: 'secondary.main',
               }}
               className="bg-blue-main"
-              key={language.title}
+              key={language.locale}
               icon={
                 <Link
-                  href={localizePath(filename, language.title)}
+                  href={localizePath(filename, language.locale)}
                   sx={{ color: 'white', textDecoration: 'none' }}
                 >
-                  <Typography>{language.title}</Typography>
+                  <Typography>{language.locale}</Typography>
                 </Link>
               }
               tooltipTitle={language.name}

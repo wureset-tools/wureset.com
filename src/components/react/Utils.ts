@@ -1,3 +1,7 @@
+import { AstroI18next } from 'astro-i18next';
+
+const locales = AstroI18next.config.locales;
+
 export const paths = [
   { name: 'home', route: '/' },
   { name: 'downloads', route: '/downloads' },
@@ -6,22 +10,19 @@ export const paths = [
 ];
 
 export const languages = [
-  { title: 'br', name: 'Português' },
-  { title: 'de', name: 'Deutsch' },
-  { title: 'en', name: 'English' },
-  { title: 'es', name: 'Español' },
-  { title: 'fr', name: 'Français' },
-  { title: 'it', name: 'Italiano' },
+  { locale: 'br', name: 'Português' },
+  { locale: 'de', name: 'Deutsch' },
+  { locale: 'en', name: 'English' },
+  { locale: 'es', name: 'Español' },
+  { locale: 'fr', name: 'Français' },
+  { locale: 'it', name: 'Italiano' },
 ];
 
 export const localizePath = (path: string, locale: string): string => {
-  if (locale === 'en') return path;
+  if (!locales.includes(locale)) return path;
 
   return '/' + locale + path;
 };
 
-export const resolveLanguage = (language: string): string => {
-  const languajes = ['br', 'de', 'es', 'fr', 'it'];
-
-  return languajes.find((element) => element === language) ?? 'en';
-};
+export const resolveLanguage = (language: string): string =>
+  locales.find((lang) => lang === language) ?? 'en';
