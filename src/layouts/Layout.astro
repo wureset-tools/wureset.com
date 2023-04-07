@@ -9,6 +9,7 @@ export interface Props {
   title: string;
 }
 
+const { pathname } = Astro.url;
 const { title } = Astro.props;
 ---
 
@@ -21,7 +22,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar client:only="react" />
+    <Navbar pathname={pathname} client:only="react" />
     <slot />
     <Footer client:only="react" />
     <Scripts />

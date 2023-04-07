@@ -8,8 +8,9 @@ import i18next from 'i18next';
 
 import Favicon from './Favicon.astro';
 import Seo from './Seo.astro';
+import { resolveLanguage } from './react';
 
-const lang = i18next.resolvedLanguage;
+const lang = resolveLanguage(i18next.resolvedLanguage);
 ---
 
 <!-- Global Metadata -->
@@ -23,7 +24,7 @@ const lang = i18next.resolvedLanguage;
 <Seo />
 
 <link
-  rel="prefetch"
+  rel="preload prefetch"
   as="fetch"
   type="application/json"
   href={'/locales/' + lang + '/common.json'}

@@ -1,11 +1,11 @@
-const paths = [
+export const paths = [
   { name: 'home', route: '/' },
   { name: 'downloads', route: '/downloads' },
   { name: 'about', route: '/about' },
   { name: 'support', route: '/support' },
 ];
 
-const languages = [
+export const languages = [
   { title: 'br', name: 'Português' },
   { title: 'de', name: 'Deutsch' },
   { title: 'en', name: 'English' },
@@ -14,12 +14,14 @@ const languages = [
   { title: 'it', name: 'Italiano' },
 ];
 
-export function localizePath(path: string, locale: string): string {
-  if (locale === 'en') {
-    return path;
-  }
+export const localizePath = (path: string, locale: string): string => {
+  if (locale === 'en') return path;
 
   return '/' + locale + path;
-}
+};
 
-export { languages, paths };
+export const resolveLanguage = (language: string): string => {
+  const languajes = ['br', 'de', 'es', 'fr', 'it'];
+
+  return languajes.find((element) => element === language) ?? 'en';
+};

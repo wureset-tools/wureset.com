@@ -15,16 +15,19 @@ import i18next, { setDefaultNamespace, t } from 'i18next';
 import React from 'react';
 
 import { theme } from './Theme';
-import { languages, localizePath, paths } from './Utils';
+import { languages, localizePath, paths, resolveLanguage } from './Utils';
 
 setDefaultNamespace('common');
 
-const lang = i18next.resolvedLanguage;
+const lang = resolveLanguage(i18next.resolvedLanguage);
 
-const url = window.location.pathname;
-const pathname = url.substring(url.lastIndexOf('/'));
+interface Props {
+  pathname: string;
+}
 
-const Navbar = (): React.ReactElement => {
+const Navbar = (props: Props): React.ReactElement => {
+  const filename = props.pathname.substring(props.pathname.lastIndexOf('/'));
+
   return (
     <Box sx={{ marginBottom: '70px' }}>
       <ThemeProvider theme={theme}>
@@ -65,7 +68,7 @@ const Navbar = (): React.ReactElement => {
               key={language.title}
               icon={
                 <Link
-                  href={localizePath(pathname, language.title)}
+                  href={localizePath(filename, language.title)}
                   sx={{ color: 'white', textDecoration: 'none' }}
                 >
                   <Typography>{language.title}</Typography>
