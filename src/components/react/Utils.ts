@@ -1,6 +1,6 @@
-import { AstroI18next } from 'astro-i18next';
+import astroI18nextConfig from 'astro-i18next.config.mjs';
 
-const locales = AstroI18next.config.locales;
+const locales = astroI18nextConfig.locales;
 
 export const paths = [
   { name: 'home', route: '/' },
