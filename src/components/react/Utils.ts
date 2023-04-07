@@ -1,6 +1,4 @@
-import astroI18nextConfig from 'astro-i18next.config.mjs';
-
-const locales = astroI18nextConfig.locales;
+const locales = ['it', 'fr', 'es', 'de', 'br'];
 
 export const paths = [
   { name: 'home', route: '/' },

@@ -42,7 +42,7 @@ const Navbar = (props: Props): React.ReactElement => {
                 key={path.name}
                 className="h-16 rounded-none"
               >
-                {t('navbar.' + path.name) ?? path.name}
+                {t('navbar.' + path.name)}
               </Button>
             ))}
           </Toolbar>
