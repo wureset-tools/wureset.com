@@ -15,28 +15,14 @@ import i18next, { setDefaultNamespace, t } from 'i18next';
 import React from 'react';
 
 import { theme } from './Theme';
+import { languages, localizePath, paths } from './Utils';
 
 setDefaultNamespace('common');
 
 const lang = i18next.resolvedLanguage;
 
-const path = ['br', 'de', 'es', 'fr', 'it'].includes(lang) ? `/${lang}/` : '/';
-
-const links = [
-  { id: 1, route: t('navbar.home'), url: path },
-  { id: 2, route: t('navbar.downloads'), url: `${path}downloads` },
-  { id: 3, route: t('navbar.about'), url: `${path}about` },
-  { id: 4, route: t('navbar.support'), url: `${path}support` },
-];
-
-const actions = [
-  { id: 'br', title: 'Português', url: '/br' },
-  { id: 'de', title: 'Deutsch', url: '/de' },
-  { id: 'en', title: 'English', url: '/' },
-  { id: 'es', title: 'Español', url: '/es' },
-  { id: 'fr', title: 'Français', url: '/fr' },
-  { id: 'it', title: 'Italiano', url: '/it' },
-];
+const url = window.location.pathname;
+const pathname = url.substring(url.lastIndexOf('/'));
 
 const Navbar = (): React.ReactElement => {
   return (
@@ -45,18 +31,17 @@ const Navbar = (): React.ReactElement => {
         <CssBaseline />
         <AppBar>
           <Toolbar>
-            <Typography>
-              {links.map((link) => (
-                <Button
-                  color="inherit"
-                  component="a"
-                  href={link.url}
-                  key={link.id}
-                >
-                  {link.route}
-                </Button>
-              ))}
-            </Typography>
+            {paths.map((path) => (
+              <Button
+                color="inherit"
+                component="a"
+                href={localizePath(path.route, lang)}
+                key={path.name}
+                className="h-16 rounded-none"
+              >
+                {t('navbar.' + path.name)}
+              </Button>
+            ))}
           </Toolbar>
         </AppBar>
         <SpeedDial
@@ -67,30 +52,26 @@ const Navbar = (): React.ReactElement => {
           FabProps={{
             sx: {
               bgcolor: 'secondary.main',
-              '&:hover': {
-                bgcolor: 'secondary.main',
-              },
             },
+            className: 'bg-blue-main',
           }}
         >
-          {actions.map((action) => (
+          {languages.map((language) => (
             <SpeedDialAction
               sx={{
                 bgcolor: 'secondary.main',
-                '&:hover': {
-                  bgcolor: 'secondary.main',
-                },
               }}
-              key={action.id}
+              className="bg-blue-main"
+              key={language.title}
               icon={
                 <Link
-                  href={action.url}
+                  href={localizePath(pathname, language.title)}
                   sx={{ color: 'white', textDecoration: 'none' }}
                 >
-                  <Typography>{action.id}</Typography>
+                  <Typography>{language.title}</Typography>
                 </Link>
               }
-              tooltipTitle={action.title}
+              tooltipTitle={language.name}
             />
           ))}
         </SpeedDial>
