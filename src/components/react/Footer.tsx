@@ -113,7 +113,7 @@ const Footer = (): React.ReactElement => {
                 </Typography>
               </Grid>
               <Grid item xs={6}>
-                <Link href="cookies-policy">
+                <Link href="/cookies-policy">
                   <Typography color="white" align="right">
                     Cookies Policy
                   </Typography>
