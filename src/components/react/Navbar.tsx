@@ -1,6 +1,5 @@
 import LanguageIcon from '@mui/icons-material/Language';
 import {
-  Button,
   CssBaseline,
   Link,
   SpeedDial,
@@ -11,13 +10,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import i18next, { t } from 'i18next';
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import { theme } from './Theme';
-import { languages, localizePath, paths, resolveLanguage } from './Utils';
+import { languages, localizePath } from './Utils';
 
-const lang = resolveLanguage(i18next.language);
+const Buttons = React.lazy(async () => await import('./Buttons'));
 
 interface Props {
   pathname: string;
@@ -32,17 +30,9 @@ const Navbar = (props: Props): React.ReactElement => {
         <CssBaseline />
         <AppBar>
           <Toolbar>
-            {paths.map((path) => (
-              <Button
-                color="inherit"
-                component="a"
-                href={localizePath(path.route, lang)}
-                key={path.name}
-                className="h-16 rounded-none hover:bg-indigo-light"
-              >
-                {t('navbar.' + path.name)}
-              </Button>
-            ))}
+            <Suspense>
+              <Buttons />
+            </Suspense>
           </Toolbar>
         </AppBar>
         <SpeedDial
