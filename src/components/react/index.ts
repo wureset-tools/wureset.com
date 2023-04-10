@@ -1,4 +1,5 @@
-export * from './Buttons';
+export { default as ActionButtons } from './ActionButtons';
+export { default as Buttons } from './Buttons';
 export * from './Footer';
 export * from './Navbar';
 export * from './Theme';

@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import i18next, { t } from 'i18next';
 import React from 'react';
 
@@ -10,15 +9,13 @@ const Buttons = (): React.ReactElement => {
   return (
     <>
       {paths.map((path) => (
-        <Button
-          color="inherit"
-          component="a"
+        <a
           href={localizePath(path.route, lang)}
           key={path.name}
-          className="hover:bg-indigo-light h-16 rounded-none"
+          className="bg-indigo-main hover:bg-indigo-light inline-flex h-16 items-center rounded-none px-6"
         >
           {t('navbar.' + path.name)}
-        </Button>
+        </a>
       ))}
     </>
   );
