@@ -1,21 +1,30 @@
 ---
-import { t } from 'i18next';
-import { paths } from './react/Utils';
 import { localizePath } from 'astro-i18next';
+import { t } from 'i18next';
+
 import { ActionButtons } from './react';
-import Hamburger from './icons/Hamburger.astro';
+import { paths } from './react/Utils';
 
 const { pathname } = Astro.url;
 ---
 
-<header class="bg-indigo-main h-16 z-20">
+<header class="bg-indigo-main h-16">
   <!-- TODO
   - [ ] Create Hamburger Menu
-
   -->
 
-  <div class="ml-4 h-full md:hidden cursor-pointer" id="btn-ham">
-    <Hamburger />
+  <div class="pl-4 h-full md:hidden cursor-pointer" id="btn-ham">
+    <svg
+      style={{
+        fill: 'white',
+        height: '64px',
+        width: 'auto',
+      }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      ><path d="M0 0h24v24H0V0z" fill="none"></path><path
+        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg
+    >
   </div>
   <nav
     class="hidden h-full md:flex absolute inset-0 md:static top-12 w-screen md:ml-4 bg-indigo-main animate-fade-out md:animate-none"

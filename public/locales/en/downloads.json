@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "home": "Home",
+    "downloads": "Downloads",
+    "about": "About",
+    "support": "Support"
+  },
   "main": {
     "title": "Downloads",
     "description": "Reset Windows Update Tool is only available for download as 64-bit packages, as well as a source code file if you want to compile it yourself."
@@ -12,6 +18,6 @@
       "script-wureset": "This is an script for Windows troubleshooting",
       "script-wureset-lite": "This script only restores the Windows Update components (lite version)",
       "reset-wsus-client-id": "This script Fix Duplicate WSUS ClientIDs"
-     }
+    }
   }
 }
