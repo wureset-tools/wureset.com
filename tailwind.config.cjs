@@ -2,6 +2,22 @@
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    extend: {
+      animation: {
+        'fade-in': 'fade-in 500ms ease-in-out forwards',
+        'fade-out': 'fade-out 500ms ease-in-out forwards',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transofrm: 'translateX(0)', opacity: '100%' },
+        },
+        'fade-out': {
+          '0%': { transofrm: 'translateX(0)', opacity: '100%' },
+          '100%': { transform: 'translateX(-100%)', opacity: '0' },
+        },
+      },
+    },
     colors: {
       indigo: {
         main: '#3F51B5', // PRIMARY COLOR

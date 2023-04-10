@@ -1,0 +1,62 @@
+---
+import { t } from 'i18next';
+import { paths } from './react/Utils';
+import { localizePath } from 'astro-i18next';
+import { ActionButtons } from './react';
+import Hamburger from './icons/Hamburger.astro';
+
+const { pathname } = Astro.url;
+---
+
+<header class="bg-indigo-main h-16 z-20">
+  <!-- TODO
+  - [ ] Create Hamburger Menu
+
+  -->
+
+  <div class="ml-4 h-full md:hidden cursor-pointer" id="btn-ham">
+    <Hamburger />
+  </div>
+  <nav
+    class="hidden h-full md:flex absolute inset-0 md:static top-12 w-screen md:ml-4 bg-indigo-main animate-fade-out md:animate-none"
+    id="primary-nav"
+  >
+    <ul
+      class="flex flex-col md:h-full md:flex-row items-center text-white font-bold mt-16 md:mt-0 md:gap-0"
+    >
+      {
+        paths.map((path) => (
+          <li class="w-full md:w-auto">
+            <a
+              href={localizePath(path.route)}
+              class="py-6 px-4 md:w-full text-4xl md:text-base  hover:bg-indigo-light block transition-colors hover:text-indigo-main duration-500"
+            >
+              {t('navbar.' + path.name)}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <div>
+    <ActionButtons pathname={pathname} client:only="react" />
+  </div>
+
+  <script>
+    const hamburgerBtn = document.getElementById('btn-ham') as HTMLDivElement;
+    const primaryNav = document.getElementById('primary-nav') as HTMLDivElement;
+
+    hamburgerBtn?.addEventListener('click', () => {
+      if (primaryNav?.classList.contains('hidden')) {
+        primaryNav?.classList.toggle('hidden');
+      } else {
+        setTimeout(() => {
+          primaryNav?.classList.toggle('hidden');
+        }, 500);
+      }
+
+      primaryNav?.classList.toggle('animate-fade-in');
+      primaryNav?.classList.toggle('animate-fade-out');
+    });
+  </script>
+</header>
