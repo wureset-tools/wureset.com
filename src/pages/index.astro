@@ -1,12 +1,12 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import { localizePath } from "astro-i18next";
-import { Trans } from "astro-i18next/components";
-import { changeLanguage, setDefaultNamespace, t } from "i18next";
+import Layout from '@/layouts/Layout.astro';
+import { localizePath } from 'astro-i18next';
+import { Trans } from 'astro-i18next/components';
+import { changeLanguage, setDefaultNamespace, t } from 'i18next';
 
-changeLanguage("en");
+changeLanguage('en');
 
-setDefaultNamespace("home");
+setDefaultNamespace('home');
 ---
 
 <Layout
@@ -15,33 +15,30 @@ setDefaultNamespace("home");
   <main class="pt-16">
     <div class="bg-gray-extralight">
       <div
-        class="max-w-screen-xl my-0 mx-auto py-10 px-6 flex min-h-full items-center"
+        class="max-w-screen-xl mx-auto py-10 px-6 items-center grid grid-rows-2 md:grid-rows-1 gap-4 lg:gap-32 md:grid-cols-2 justify-center"
       >
-        <div class="w-2/6">
-          <img
-            src="/assets/images/logo.png"
-            loading="lazy"
-            alt="Logo Reset Windows Update Tool"
-            height="300"
-            width="300"
-            class="w-80 h-auto"
-          />
-        </div>
-        <div class="w-4/6 xl:flex">
-          <div class="mx-6">
-            <h1 class="text-4xl font-bold text-indigo-main">
-              Reset Windows Update Tool
-            </h1>
-            <p class="my-4 text-xl text-gray-main">
-              {t('main.slogan')}
-            </p>
-          </div>
-          <div class="mx-6">
+        <img
+          src="/assets/images/logo.png"
+          loading="lazy"
+          alt="Logo Reset Windows Update Tool"
+          height="300"
+          width="300"
+          class="min-w-[200px] h-auto lg:justify-self-end mx-auto"
+        />
+
+        <div class="grid justify-center lg:justify-self-start text-center">
+          <h1 class="text-4xl font-bold text-indigo-main">
+            Reset Windows Update Tool
+          </h1>
+          <p class="my-4 text-xl text-gray-main">
+            {t('main.slogan')}
+          </p>
+          <div class="flex gap-4 justify-center">
             <a
               href={localizePath('/downloads')}
               target="_blank"
               rel="noopener noreferrer"
-              class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold m-2 p-4 inline-flex items-center"
+              class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold p-4 inline-flex items-center"
             >
               <span class="mr-2">{t('main.download')}</span>
               <svg
@@ -52,14 +49,14 @@ setDefaultNamespace("home");
                 width="24"
                 ><path d="M0 0h24v24H0z" fill="none"></path><path
                   d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
-                ></path></svg
-              >
+                ></path>
+              </svg>
             </a>
             <a
               href="https://docs.wureset.com/donate/"
               target="_blank"
               rel="noopener noreferrer"
-              class="rounded-md bg-blue-main hover:bg-blue-light text-white transition-colors hover:text-blue-main duration-500 font-bold m-2 p-4 inline-flex items-center"
+              class="rounded-md bg-blue-main hover:bg-blue-light text-white transition-colors hover:text-blue-main duration-500 font-bold p-4 inline-flex items-center"
             >
               <span class="mr-2">{t('main.donate')}</span>
               <svg
@@ -78,9 +75,11 @@ setDefaultNamespace("home");
       </div>
     </div>
 
-    <div class="max-w-screen-xl my-0 mx-auto py-10 px-6 flex flex-wrap gap-10">
-      <div class="mr-6 w-full max-w-2xl">
-        <h2 class="mb-4 text-3xl font-bold text-blue-main">
+    <div
+      class="max-w-screen-xl my-0 mx-auto py-10 px-6 flex flex-wrap gap-10 justify-start lg:justify-center"
+    >
+      <div class="mr-6 w-full lg:max-w-[50ch]">
+        <h2 class="text-3xl font-bold text-blue-main">
           {t('secondary.title')}
         </h2>
         <Trans i18nKey="secondary.description">
