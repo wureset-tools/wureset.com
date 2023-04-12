@@ -23,17 +23,24 @@ const ActionButtons = (): React.ReactElement => {
         direction={'down'}
         FabProps={{
           sx: {
-            bgcolor: 'secondary.main',
+            backgroundColor: 'secondary.main',
+            '&:hover': {
+              backgroundColor: 'primary.main',
+            },
+            transition: 'background-color 300ms ease-in-out !important',
+            // added !important to overwrite the theme transition
           },
-          className: 'bg-blue-main',
         }}
       >
         {languages.map((language) => (
           <SpeedDialAction
             sx={{
               bgcolor: 'secondary.main',
+              '&:hover': {
+                backgroundColor: 'primary.main',
+              },
+              transition: 'all 300ms ease-in-out',
             }}
-            className="bg-blue-main"
             key={language.locale}
             icon={
               <Link
