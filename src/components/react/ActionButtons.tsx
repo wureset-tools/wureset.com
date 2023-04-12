@@ -12,19 +12,12 @@ import React from 'react';
 import { theme } from './Theme';
 import { languages, localizePath } from './Utils';
 
-interface Props {
-  pathname: string;
-}
-
-const ActionButtons = (props: Props): React.ReactElement => {
-  const filename = props.pathname.substring(props.pathname.lastIndexOf('/'));
-
+const ActionButtons = (): React.ReactElement => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
       <SpeedDial
-        sx={{ position: 'fixed', top: 36, right: 36, zIndex: 1150 }}
         ariaLabel="Language"
         icon={<LanguageIcon />}
         direction={'down'}
@@ -44,7 +37,7 @@ const ActionButtons = (props: Props): React.ReactElement => {
             key={language.locale}
             icon={
               <Link
-                href={localizePath(filename, language.locale)}
+                href={localizePath('/', language.locale)}
                 sx={{ color: 'white', textDecoration: 'none' }}
               >
                 <Typography>{language.locale}</Typography>
