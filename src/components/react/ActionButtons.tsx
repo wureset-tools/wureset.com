@@ -25,7 +25,7 @@ const ActionButtons = (): React.ReactElement => {
           sx: {
             backgroundColor: 'secondary.main',
             '&:hover': {
-              backgroundColor: 'primary.main',
+              backgroundColor: 'secondary.light',
             },
             transition: 'background-color 300ms ease-in-out !important',
             // added !important to overwrite the theme transition
@@ -37,7 +37,7 @@ const ActionButtons = (): React.ReactElement => {
             sx={{
               bgcolor: 'secondary.main',
               '&:hover': {
-                backgroundColor: 'primary.main',
+                backgroundColor: 'secondary.light',
               },
               transition: 'all 300ms ease-in-out',
             }}
