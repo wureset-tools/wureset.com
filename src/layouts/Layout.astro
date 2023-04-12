@@ -21,7 +21,7 @@ const { title } = Astro.props;
     <HeadHrefLangs />
     <title>{title}</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <Navbar />
     <slot />
     <Footer client:only="react" />

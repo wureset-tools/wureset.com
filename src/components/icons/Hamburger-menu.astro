@@ -1,0 +1,106 @@
+<div id="hamburger" class="hamburglar is-open z-20">
+  <div id="top"></div>
+  <svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="64px"
+    height="64px"
+    viewBox="0 0 64 64"
+    enable-background="new 0 0 64 64"
+    xml:space="preserve"
+  >
+    <path
+      id="circle"
+      fill="none"
+      stroke-width="4"
+      stroke-miterlimit="10"
+      d="M16,32h32c0,0,11.723-0.306,10.75-11
+      c-0.25-2.75-1.644-4.971-2.869-7.151C50.728,7.08,42.767,2.569,33.733,2.054C33.159,2.033,32.599,2,32,2C15.432,2,2,15.432,2,32
+      c0,16.566,13.432,30,30,30c16.566,0,30-13.434,30-30C62,15.5,48.5,2,32,2S1.875,15.5,1.875,32"
+    ></path>
+  </svg>
+  <div id="bottom"></div>
+</div>
+
+<style>
+  .hamburglar {
+    transform: scale(0.8);
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+  #top,
+  #bottom {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 36px;
+    border-radius: 2px;
+    background: #fff;
+  }
+  #top {
+    top: 19px;
+    left: 14px;
+  }
+  #bottom {
+    top: 41px;
+    left: 14px;
+  }
+  path,
+  line {
+    stroke: #fff;
+    stroke-linecap: round;
+  }
+  #top,
+  #bottom {
+    transform-origin: 34px 2px;
+    transform: rotate(0deg);
+    transition: all 500ms cubic-bezier(0.8, -1.1, 0.5, 1.9);
+  }
+  #circle {
+    stroke-dasharray: 1 100 32 300;
+    stroke-dashoffset: 101;
+    transition: all 750ms ease;
+  }
+  .hamburglar.is-closed {
+    border-radius: 32px;
+  }
+  .hamburglar.is-closed #circle {
+    stroke-dasharray: 1 100 190 300;
+    stroke-dashoffset: 1;
+  }
+  .hamburglar.is-closed #top {
+    transform: translateX(-4.5px) rotate(-45deg);
+  }
+  .hamburglar.is-closed #bottom {
+    transform: translateX(-4.5px) rotate(45deg);
+  }
+</style>
+
+<script>
+  let trigger = document.getElementById('hamburger');
+  let isClosed = true;
+
+  trigger?.addEventListener('click', function () {
+    burgerTime();
+  });
+
+  function burgerTime() {
+    if (isClosed == true) {
+      trigger?.classList.remove('is-open');
+      trigger?.classList.add('is-closed');
+      isClosed = false;
+    } else {
+      trigger?.classList.remove('is-closed');
+      trigger?.classList.add('is-open');
+      isClosed = true;
+    }
+  }
+</script>
