@@ -1,5 +1,6 @@
 ---
 import { t } from 'i18next';
+
 type Props = {
   title: string;
   primaryLink: string;
@@ -13,14 +14,8 @@ type Props = {
     | 'secondary.description.reset-wsus-client-id';
 };
 
-const {
-  title,
-  primaryLink,
-  secondaryLink,
-  version,
-  bgActive,
-  description,
-}: Props = Astro.props;
+const { title, primaryLink, secondaryLink, version, bgActive, description } =
+  Astro.props as Props;
 ---
 
 <div
@@ -52,7 +47,7 @@ const {
       target="_blank"
       rel="noopener noreferrer"
       class="text-blue-main hover:underline visited:text-purple text-xs"
-      >See more {'>>'}</a
+      >{t('secondary.more')} {'>>'}</a
     >
   </div>
 </div>

@@ -1,18 +1,18 @@
 {
   "navbar": {
     "home": "Índice",
-    "downloads": "Baixar",
+    "downloads": "Downloads",
     "about": "Sobre",
-    "support": "Ajuda"
+    "support": "Suporte"
   },
   "main": {
     "title": "Como posso ajudar?",
     "options": "Há várias formas de contribuir para melhorar o nosso projecto. Não precisa de ser um promotor para ajudar! Algumas formas de poder ajudar incluem:",
-    "report-error": "<0>Reportando erros</0>: Se se deparar com algum erro na documentação, por favor informe-nos. Isto ajuda-nos a manter a documentação precisa e actualizada.",
-    "request-feature": "<0>Pedir características</0>: Se tiver uma ideia para uma funcionalidade que possa ser útil, por favor proponha-a. Agradecemos o feedback da nossa comunidade e tomaremos em consideração as suas sugestões.",
-    "correct-typos": "<0>Correcção de erros tipográficos</0>: Se notar quaisquer pequenos erros, tais como erros ortográficos ou gramaticais, sinta-se à vontade para corrigi-los. Estes podem parecer questões menores, mas podem fazer uma grande diferença na legibilidade e no profissionalismo da nossa documentação.",
-    "before": "Antes de submeter um relatório de erro ou pedido de recurso, por favor, reserve um momento para pesquisar o <0>GitHub Issue Tracker</0> para se certificar de que o seu problema ou pedido ainda não foi relatado. Isto ajuda-nos a evitar duplicações e assegura que podemos dar prioridade ao nosso trabalho de forma eficaz.",
-    "suggest": "Embora não possamos garantir que cada pedido será implementado, agradecemos todo o feedback e levamo-lo a sério. As suas sugestões e contribuições ajudam-nos a tornar o nosso projecto melhor para todos. Obrigado pela vossa ajuda!"
+    "report-error": "<0>Erros de relatório</0>: Se você se deparar com algum erro na documentação, por favor nos informe. Isto nos ajuda a manter a documentação precisa e atualizada.",
+    "request-feature": "<0>Recordar características</0>: Se você tiver uma idéia para uma característica que seria útil, por favor, proponha-a. Agradecemos o feedback de nossa comunidade e levaremos suas sugestões em consideração.",
+    "correct-typos": "<0>Corrigir erros de digitação</0>: Se você notar quaisquer pequenos erros, tais como erros ortográficos ou gramaticais, sinta-se à vontade para corrigi-los. Estes podem parecer questões menores, mas podem fazer uma grande diferença na legibilidade e no profissionalismo de nossa documentação.",
+    "before": "Antes de enviar um relatório de bug ou pedido de recurso, por favor, reserve um momento para pesquisar o <0>GitHub Issue Tracker</0> para certificar-se de que seu problema ou pedido ainda não tenha sido relatado. Isto nos ajuda a evitar duplicações e garante que podemos priorizar nosso trabalho de forma eficaz.",
+    "suggest": "Embora não possamos garantir que cada solicitação será implementada, agradecemos todo o feedback e o levamos a sério. Suas sugestões e contribuições nos ajudam a tornar nosso projeto melhor para todos. Obrigado por sua ajuda!"
   },
   "secondary": {
     "title": "Outros recursos"
