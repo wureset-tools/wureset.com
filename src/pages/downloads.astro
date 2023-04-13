@@ -1,10 +1,11 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import { changeLanguage, setDefaultNamespace, t } from "i18next";
+import Downloadcard from '@/components/Downloadcard.astro';
+import Layout from '@/layouts/Layout.astro';
+import { changeLanguage, setDefaultNamespace, t } from 'i18next';
 
-changeLanguage("en");
+changeLanguage('en');
 
-setDefaultNamespace("downloads");
+setDefaultNamespace('downloads');
 ---
 
 <Layout title="Downloads | Windows Update Reset Tool">
@@ -18,130 +19,44 @@ setDefaultNamespace("downloads");
         {t('secondary.recomended')}
       </h2>
     </div>
-    <div class="mt-6 flex p-6 bg-gray-extralight min-h-full items-center">
-      <div class="w-2/5">
-        <strong class="font-bold text-black"
-          >Reset Windows Update Tool - Portable</strong
-        >
-        <p class="mt-4 text-xs text-gray-dark">
-          {t('secondary.description.wureset')}
-        </p>
-      </div>
-      <div class="w-1/5 text-center">
-        <p class="text-sm text-gray-dark">v11.1.0</p>
-      </div>
-      <div class="w-2/5 text-right">
-        <a
-          href="https://github.com/ManuelGil/Reset-Windows-Update-Tool/releases/download/v11.1.0/Portable.zip"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold py-2 px-4"
-          >{t('secondary.download')}</a
-        >
-        <p class="mt-4 text-xs">
-          <a
-            href="https://github.com/wureset-tools/wureset/releases"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-blue-main hover:underline visited:text-purple"
-            >See more {'>>'}</a
-          >
-        </p>
-      </div>
-    </div>
+
+    <Downloadcard
+      bgActive="bg-gray-extralight"
+      title="Reset Windows Update Tool - Portable"
+      description="secondary.description.wureset"
+      primaryLink="https://github.com/ManuelGil/Reset-Windows-Update-Tool/releases/download/v11.1.0/Portable.zip"
+      secondaryLink="https://github.com/wureset-tools/wureset/releases"
+      version="v11.1.0"
+    />
+
     <div class="mt-6">
       <h2 class="text-3xl font-bold text-blue-main">{t('secondary.others')}</h2>
     </div>
-    <div class="mt-6 flex p-6 min-h-full items-center">
-      <div class="w-2/5">
-        <strong class="font-bold text-black"
-          >Reset Windows Update Tool - Script</strong
-        >
-        <p class="mt-4 text-xs text-gray-main">
-          {t('secondary.description.script-wureset')}
-        </p>
-      </div>
-      <div class="w-1/5 text-center">
-        <p class="text-sm text-gray-main">v10.5.5</p>
-      </div>
-      <div class="w-2/5 text-right">
-        <a
-          href="https://github.com/wureset-tools/script-wureset/archive/refs/tags/v10.5.5.zip"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold py-2 px-4"
-          >{t('secondary.download')}</a
-        >
-        <p class="mt-4 text-xs">
-          <a
-            href="https://github.com/wureset-tools/script-wureset/releases"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-blue-main hover:underline visited:text-purple"
-            >See more {'>>'}</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="mt-6 flex p-6 min-h-full items-center">
-      <div class="w-2/5">
-        <strong class="font-bold text-black"
-          >Reset Windows Update Tool - Lite</strong
-        >
-        <p class="mt-4 text-xs text-gray-main">
-          {t('secondary.description.script-wureset-lite')}
-        </p>
-      </div>
-      <div class="w-1/5 text-center">
-        <p class="text-sm text-gray-main">v1.0.0</p>
-      </div>
-      <div class="w-2/5 text-right">
-        <a
-          href="https://github.com/wureset-tools/script-wureset-lite/archive/refs/tags/v1.0.0.zip"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold py-2 px-4"
-          >{t('secondary.download')}</a
-        >
-        <p class="mt-4 text-xs">
-          <a
-            href="https://github.com/wureset-tools/script-wureset-lite/releases"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-blue-main hover:underline visited:text-purple"
-            >See more {'>>'}</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="mt-6 flex p-6 min-h-full items-center">
-      <div class="w-2/5">
-        <strong class="font-bold text-black">Reset WSUS Client ID</strong>
-        <p class="mt-4 text-xs text-gray-main">
-          {t('secondary.description.reset-wsus-client-id')}
-        </p>
-      </div>
-      <div class="w-1/5 text-center">
-        <p class="text-sm text-gray-main">v1.0.2</p>
-      </div>
-      <div class="w-2/5 text-right">
-        <a
-          href="https://github.com/wureset-tools/reset-wsus-client-id/archive/refs/tags/v1.0.2.zip"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold py-2 px-4"
-          >{t('secondary.download')}</a
-        >
-        <p class="mt-4 text-xs">
-          <a
-            href="https://github.com/wureset-tools/reset-wsus-client-id/releases"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-blue-main hover:underline visited:text-purple"
-            >See more {'>>'}</a
-          >
-        </p>
-      </div>
-    </div>
+
+    <Downloadcard
+      title="Reset Windows Update Tool - Script"
+      description="secondary.description.script-wureset"
+      primaryLink="https://github.com/wureset-tools/script-wureset/archive/refs/tags/v10.5.5.zip"
+      secondaryLink="https://github.com/wureset-tools/script-wureset/releases"
+      version="v10.5.5"
+      bgActive="bg-opacity-0"
+    />
+    <Downloadcard
+      title="Reset Windows Update Tool - Lite"
+      description="secondary.description.script-wureset-lite"
+      primaryLink="https://github.com/wureset-tools/script-wureset-lite/archive/refs/tags/v1.0.0.zip"
+      secondaryLink="https://github.com/wureset-tools/script-wureset-lite/releases"
+      version="v1.0.0"
+      bgActive="bg-opacity-0"
+    />
+
+    <Downloadcard
+      title="Reset WSUS Client ID"
+      description="secondary.description.reset-wsus-client-id"
+      primaryLink=" https://github.com/wureset-tools/reset-wsus-client-id/archive/refs/tags/v1.0.2.zip"
+      secondaryLink="https://github.com/wureset-tools/reset-wsus-client-id/releases"
+      version="v1.0.2"
+      bgActive="bg-opacity-0"
+    />
   </main>
 </Layout>

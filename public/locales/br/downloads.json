@@ -1,23 +1,24 @@
 {
   "navbar": {
     "home": "Índice",
-    "downloads": "Baixar",
+    "downloads": "Downloads",
     "about": "Sobre",
-    "support": "Ajuda"
+    "support": "Suporte"
   },
   "main": {
-    "title": "Baixar",
-    "description": "Reset Windows Update Tool está disponível apenas para download como pacotes de 64 bits, bem como um arquivo de código-fonte, se você quiser compilá-lo."
+    "title": "Downloads",
+    "description": "Reset Windows Update Tool só está disponível para download como pacotes de 64 bits, assim como um arquivo de código fonte se você mesmo quiser compilá-lo."
   },
   "secondary": {
-    "recomended": "Download Recomendado:",
-    "others": "Outros Downloads:",
-    "download": "Baixar",
+    "recomended": "Download Recomendado",
+    "others": "Outros Downloads",
+    "download": "Download",
+    "more": "ver mais",
     "description": {
       "wureset": "Ferramenta de solução de problemas com atualizações do Windows",
-      "script-wureset": "Este é um script para solução de problemas do Windows",
-      "script-wureset-lite": "Este script apenas restaura os componentes do Windows Update (versão lite)",
-      "reset-wsus-client-id": "Este script corrige ClientIDs WSUS duplicados"
+      "script-wureset": "Este é um roteiro para a solução de problemas do Windows",
+      "script-wureset-lite": "Este script restaura apenas os componentes do Windows Update (versão lite)",
+      "reset-wsus-client-id": "Este script conserta clientes WSUS duplicados"
     }
   }
 }

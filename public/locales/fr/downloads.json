@@ -3,16 +3,17 @@
     "home": "Index",
     "downloads": "Téléchargements",
     "about": "À Propos De",
-    "support": "Aide"
+    "support": "Support"
   },
   "main": {
     "title": "Téléchargements",
     "description": "Reset Windows Update Tool n'est disponible au téléchargement que sous forme de packages 64 bits, ainsi qu'un fichier de code source si vous souhaitez le compiler vous-même."
   },
   "secondary": {
-    "recomended": "Téléchargement Recommandé:",
-    "others": "Other Downloads:",
+    "recomended": "Téléchargement Recommandé",
+    "others": "Autres téléchargements",
     "download": "Téléchargez",
+    "more": "voir plus",
     "description": {
       "wureset": "Outil de dépannage avec les mises à jour Windows",
       "script-wureset": "Ceci est un script pour le dépannage de Windows",
