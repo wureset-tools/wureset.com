@@ -1,0 +1,61 @@
+---
+import { changeLanguage, setDefaultNamespace, t } from 'i18next';
+type Props = {
+  title: string;
+  primaryLink: string;
+  secondaryLink: string;
+  version: string;
+  bgActive: 'bg-gray-extralight' | 'bg-opacity-0';
+  description:
+    | 'secondary.description.wureset'
+    | 'secondary.description.script-wureset'
+    | 'secondary.description.script-wureset-lite'
+    | 'secondary.description.reset-wsus-client-id';
+};
+
+const {
+  title,
+  primaryLink,
+  secondaryLink,
+  version,
+  bgActive,
+  description,
+}: Props = Astro.props;
+changeLanguage('en');
+
+setDefaultNamespace('downloads');
+---
+
+<div
+  class={`mt-6 flex flex-wrap p-6 bg-gray-extralight min-h-full items-center justify-center sm:justify-between gap-y-8 rounded-md text-center sm:text-left gap-4 ${bgActive}`}
+>
+  <div class="flex items-center justify-center gap-8 flex-wrap">
+    <div class="max-w-[30ch]">
+      <strong class="font-bold text-black max-w-[40ch]">{title}</strong>
+      <p class="mt-4 text-xs text-gray-dark">
+        {t(description)}
+      </p>
+    </div>
+    <div>
+      <p class="text-sm text-gray-dark">{version}</p>
+    </div>
+  </div>
+
+  <div class="text-center sm:text-right self-center flex flex-col gap-2">
+    <a
+      href={primaryLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold py-2 px-4"
+      >{t('secondary.download')}</a
+    >
+
+    <a
+      href={secondaryLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-blue-main hover:underline visited:text-purple text-xs"
+      >See more {'>>'}</a
+    >
+  </div>
+</div>
