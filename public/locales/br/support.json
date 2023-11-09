@@ -11,7 +11,7 @@
     "report-error": "<0>Erros de relatório</0>: Se você se deparar com algum erro na documentação, por favor nos informe. Isto nos ajuda a manter a documentação precisa e atualizada.",
     "request-feature": "<0>Recordar características</0>: Se você tiver uma idéia para uma característica que seria útil, por favor, proponha-a. Agradecemos o feedback de nossa comunidade e levaremos suas sugestões em consideração.",
     "correct-typos": "<0>Corrigir erros de digitação</0>: Se você notar quaisquer pequenos erros, tais como erros ortográficos ou gramaticais, sinta-se à vontade para corrigi-los. Estes podem parecer questões menores, mas podem fazer uma grande diferença na legibilidade e no profissionalismo de nossa documentação.",
-    "before": "Antes de enviar um relatório de bug ou pedido de recurso, por favor, reserve um momento para pesquisar o <0>GitHub Issue Tracker</0> para certificar-se de que seu problema ou pedido ainda não tenha sido relatado. Isto nos ajuda a evitar duplicações e garante que podemos priorizar nosso trabalho de forma eficaz.",
+    "before": "Antes de enviar um relatório de bug ou pedido de recurso, por favor, reserve um momento para pesquisar o <0>Issue Tracker</0> para certificar-se de que seu problema ou pedido ainda não tenha sido relatado. Isto nos ajuda a evitar duplicações e garante que podemos priorizar nosso trabalho de forma eficaz.",
     "suggest": "Embora não possamos garantir que cada solicitação será implementada, agradecemos todo o feedback e o levamos a sério. Suas sugestões e contribuições nos ajudam a tornar nosso projeto melhor para todos. Obrigado por sua ajuda!"
   },
   "secondary": {
