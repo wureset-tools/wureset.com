@@ -7,6 +7,47 @@ import HamburgerMenu from './icons/Hamburger-menu.astro';
     <div class="z-20 cursor-pointer pl-4 md:hidden" id="btn-ham">
       <HamburgerMenu />
     </div>
+    <nav
+      class="absolute inset-0 top-12 hidden h-screen w-screen animate-fade-out bg-indigo-main md:static md:mx-4 md:flex md:h-full md:w-fit md:animate-none"
+      id="primary-nav"
+    >
+      <ul
+        class="mt-16 flex flex-col items-center font-bold text-white md:mt-0 md:h-full md:flex-row md:gap-0"
+      >
+        <li>
+          <a
+            href="/"
+            class="block w-screen px-4 py-4 text-4xl transition-colors duration-500 hover:bg-indigo-light hover:text-indigo-main md:w-full md:py-[1.2rem] md:text-base"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/downloads"
+            class="block w-screen px-4 py-4 text-4xl transition-colors duration-500 hover:bg-indigo-light hover:text-indigo-main md:w-full md:py-[1.2rem] md:text-base"
+          >
+            Downloads
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about"
+            class="block w-screen px-4 py-4 text-4xl transition-colors duration-500 hover:bg-indigo-light hover:text-indigo-main md:w-full md:py-[1.2rem] md:text-base"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/support"
+            class="block w-screen px-4 py-4 text-4xl transition-colors duration-500 hover:bg-indigo-light hover:text-indigo-main md:w-full md:py-[1.2rem] md:text-base"
+          >
+            Support
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
 
