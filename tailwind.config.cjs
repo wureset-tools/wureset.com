@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
   theme: {
     extend: {
       animation: {
@@ -10,10 +10,10 @@ module.exports = {
       keyframes: {
         'fade-in': {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
-          '100%': { transofrm: 'translateX(0)', opacity: '100%' },
+          '100%': { transform: 'translateX(0)', opacity: '100%' },
         },
         'fade-out': {
-          '0%': { transofrm: 'translateX(0)', opacity: '100%' },
+          '0%': { transform: 'translateX(0)', opacity: '100%' },
           '100%': { transform: 'translateX(-100%)', opacity: '0' },
         },
       },

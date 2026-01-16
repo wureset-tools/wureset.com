@@ -1,21 +1,20 @@
 ---
 import Github from './icons/Github.astro';
-import Twitter from './icons/Twitter.astro';
 ---
 
-<footer class="bg-black text-white px-4 py-10">
+<footer class="bg-black px-4 py-10 text-white">
   <div
-    class="container grid sm:grid-cols-2 sm:grid-rows-[1fr_0.1fr_0.5fr] max-w-7xl mx-auto gap-4"
+    class="container mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 sm:grid-rows-[1fr_0.1fr_0.5fr]"
   >
     <div class="links">
-      <h3 class="font-bold text-3xl mb-4">Social</h3>
-      <div class="flex gap-4 flex-wrap">
-        <a
+      <h3 class="mb-4 text-3xl font-bold">Social</h3>
+      <div class="flex flex-wrap gap-4">
+        <!-- <a
           class="fill-white transition-colors hover:fill-purple"
           href="https://twitter.com/wureset"
         >
           <Twitter />
-        </a>
+        </a> -->
         <a
           class="fill-white transition-colors hover:fill-purple"
           href="https://github.com/wureset-tools"
@@ -25,32 +24,26 @@ import Twitter from './icons/Twitter.astro';
       </div>
     </div>
     <div class="copyright">
-      <h3 class="font-bold text-3xl">Services</h3>
+      <h3 class="text-3xl font-bold">Services</h3>
       <ul class="text-lg">
         <li>
           <a
-            class="underline hover:text-purple transition-colors duration-300"
+            class="underline transition-colors duration-300 hover:text-purple"
             href="https://docs.wureset.com/">Docs</a
           >
         </li>
         <li>
           <a
-            class="underline hover:text-purple transition-colors duration-300"
-            href="https://wureset.online/">Status</a
-          >
-        </li>
-        <li>
-          <a
-            class="underline hover:text-purple transition-colors duration-300"
-            href="https://wureset.canny.io/bug-report">Issue Tracker</a
+            class="underline transition-colors duration-300 hover:text-purple"
+            href="https://status.wureset.com/">Status</a
           >
         </li>
       </ul>
     </div>
-    <div class="divider w-full rounded-md bg-white h-1 sm:col-span-2"></div>
+    <div class="divider h-1 w-full rounded-md bg-white sm:col-span-2"></div>
     <p>
       Made with <span class="text-purple"> ♥</span> by <a
-        class="underline hover:text-purple transition-colors duration-300"
+        class="underline transition-colors duration-300 hover:text-purple"
         href="https://github.com/ManuelGil"
       >
         Manuel Gil</a
@@ -58,7 +51,7 @@ import Twitter from './icons/Twitter.astro';
     </p>
     <a
       href="/cookies-policy"
-      class="underline hover:text-purple transition-colors duration-300"
+      class="underline transition-colors duration-300 hover:text-purple"
       >Cookies Policy</a
     >
   </div>

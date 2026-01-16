@@ -1,53 +1,53 @@
 ---
-import { t } from 'i18next';
-
 type Props = {
   title: string;
+  description: string;
   primaryLink: string;
   secondaryLink: string;
   version: string;
   bgActive: 'bg-gray-extralight' | 'bg-opacity-0';
-  description:
-    | 'secondary.description.wureset'
-    | 'secondary.description.script-wureset'
-    | 'secondary.description.script-wureset-lite'
-    | 'secondary.description.reset-wsus-client-id';
 };
 
-const { title, primaryLink, secondaryLink, version, bgActive, description } =
+const { title, description, primaryLink, secondaryLink, version, bgActive } =
   Astro.props as Props;
 ---
 
 <div
-  class={`mt-6 flex flex-wrap p-6 bg-gray-extralight min-h-full items-center justify-center sm:justify-between gap-y-8 rounded-md text-center sm:text-left gap-4 ${bgActive}`}
+  class={`mt-6 flex min-h-full flex-wrap items-center justify-center gap-4 gap-y-8 rounded-md bg-gray-extralight p-6 text-center sm:justify-between sm:text-left ${bgActive}`}
 >
-  <div class="flex items-center justify-center gap-8 flex-wrap">
+  <div class="flex flex-wrap items-center justify-center gap-8">
     <div class="max-w-[30ch]">
-      <strong class="font-bold text-black max-w-[40ch]">{title}</strong>
+      <strong class="max-w-[40ch] font-bold text-black">
+        {title}
+      </strong>
+
       <p class="mt-4 text-xs text-gray-dark">
-        {t(description)}
+        {description}
       </p>
     </div>
+
     <div>
       <p class="text-sm text-gray-dark">{version}</p>
     </div>
   </div>
 
-  <div class="text-center sm:text-right self-center flex flex-col gap-2">
+  <div class="flex flex-col gap-2 self-center text-center sm:text-right">
     <a
       href={primaryLink}
       target="_blank"
       rel="noopener noreferrer"
-      class="rounded-md bg-indigo-main hover:bg-indigo-light text-white transition-colors hover:text-indigo-main duration-500 font-bold py-2 px-4"
-      >{t('secondary.download')}</a
+      class="rounded-md bg-indigo-main px-4 py-2 font-bold text-white transition-colors duration-500 hover:bg-indigo-light hover:text-indigo-main"
     >
+      Download
+    </a>
 
     <a
       href={secondaryLink}
       target="_blank"
       rel="noopener noreferrer"
-      class="text-blue-main hover:underline visited:text-purple text-xs"
-      >{t('secondary.more')} {'>>'}</a
+      class="text-xs text-blue-main visited:text-purple hover:underline"
     >
+      See more &gt;&gt;
+    </a>
   </div>
 </div>

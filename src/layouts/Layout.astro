@@ -2,10 +2,8 @@
 import Footer from '@/components/Footer.astro';
 import Head from '@/components/Head.astro';
 import Navbar from '@/components/Navbar.astro';
-import Scripts from '@/components/Scripts.astro';
-import { HeadHrefLangs } from 'astro-i18next/components';
+import '@/styles/global.css';
 import { ViewTransitions } from 'astro:transitions';
-import i18next from 'i18next';
 
 export interface Props {
   title: string;
@@ -15,11 +13,10 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={i18next.language}>
+<html lang="en">
   <head>
     <meta name="generator" content={Astro.generator} />
     <Head />
-    <HeadHrefLangs />
     <title>{title}</title>
     <ViewTransitions />
   </head>
@@ -27,6 +24,5 @@ const { title } = Astro.props;
     <Navbar />
     <slot />
     <Footer />
-    <Scripts />
   </body>
 </html>
